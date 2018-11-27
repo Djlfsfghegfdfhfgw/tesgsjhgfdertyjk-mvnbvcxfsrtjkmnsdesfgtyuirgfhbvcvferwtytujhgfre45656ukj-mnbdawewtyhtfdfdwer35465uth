@@ -56,11 +56,6 @@ async def on_message(message):
 
 @bot.command()
 @commands.cooldown(1, 5, commands.BucketType.user)
-async def invite(ctx):
-    await ctx.send("""**You can add me here ->** http://bit.ly/InviteRaluvyBot""")
-
-@bot.command()
-@commands.cooldown(1, 5, commands.BucketType.user)
 async def hug(ctx, member: discord.Member=None):
     a = (random.choice(['https://media.giphy.com/media/xUPGchPtx9E4Ijht9S/giphy.gif', 'http://i.imgur.com/VIwkYxz.gif', 'https://vignette.wikia.nocookie.net/steven-universe/images/1/1b/Group_Hug.gif/revision/latest/scale-to-width-down/320?cb=20160515215411', 'http://orig03.deviantart.net/648e/f/2013/071/2/3/hug_by_shiro_nee-d5xtm62.gif', 'https://vignette.wikia.nocookie.net/degrassi/images/f/f1/Asuna_hugs_Kirito.gif', 'https://thumbs.gfycat.com/AlienatedUnawareArcherfish-size_restricted.gif', 'https://media.giphy.com/media/kvKFM3UWg2P04/giphy.gif', 'https://66.media.tumblr.com/5dfb67d0a674fe5f81950478f5b2d4ed/tumblr_ofd4e2h8O81ub9qlao1_500.gif', 'https://i.imgur.com/r9aU2xv.gif', 'https://media.giphy.com/media/14aBJO7py75MD6/giphy.gif', 'https://66.media.tumblr.com/19e9210e27061fd20b58078cad8c9552/tumblr_nj5nw0LHbw1r7eta3o1_500.gif', 'https://media.giphy.com/media/3oz8xU3bnghA8WzEGI/giphy.gif', 'https://vignette.wikia.nocookie.net/degrassi/images/2/29/Beckdam_hug.gif/revision/latest?cb=20130825231225', 'https://media.giphy.com/media/143v0Z4767T15e/giphy.gif', 'https://i.imgur.com/nrdYNtL.gif', 'https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif', 'https://media.giphy.com/media/DjczAlIcyK1Co/giphy.gif']))
     if member is None:
