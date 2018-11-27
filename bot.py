@@ -606,12 +606,6 @@ async def setplaying(ctx, *, message = None):
     await bot.change_presence(activity=discord.Game(name=f"{message} || ,help"))
     await ctx.send("<:RaluvySucces:489805130963615754>", delete_after=2)		   
 		   
-@bot.command()
-@commands.cooldown(1, 5, commands.BucketType.user)
-async def support(ctx):
-    em = discord.Embed(title="", description="", color=discord.Colour.green())
-    em.add_field(name='Join our support server!', value='[here]( https://discord.gg/bazhjYQ )')
-    await ctx.send(embed=em)
 
 @bot.command(aliases=['h'])
 @commands.cooldown(1, 5, commands.BucketType.user)
@@ -638,7 +632,7 @@ async def presence():
 
         await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="i like cookies || ,help"))
         await sleep(30)
-        await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.listening, name=",invite || ,help"))
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.listening, name="Fangs || ,help"))
         await sleep(30)
         await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="Noice || ,help"))
         await sleep(30)
