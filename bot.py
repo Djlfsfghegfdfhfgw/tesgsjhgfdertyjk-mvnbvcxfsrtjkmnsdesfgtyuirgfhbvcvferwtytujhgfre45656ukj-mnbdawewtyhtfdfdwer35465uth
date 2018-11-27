@@ -630,7 +630,9 @@ async def presence():
                 if u.bot == False:
                     a = a + 1
 
-        await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="i like cookies || ,help"))
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="i like catnip || ,help"))
+        await sleep(30)
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="don't eat me!! || ,help"))
         await sleep(30)
         await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.listening, name="Fangs || ,help"))
         await sleep(30)
