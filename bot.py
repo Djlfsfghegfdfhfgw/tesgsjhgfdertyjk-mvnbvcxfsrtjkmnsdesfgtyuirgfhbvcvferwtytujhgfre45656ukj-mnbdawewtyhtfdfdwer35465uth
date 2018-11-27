@@ -634,7 +634,7 @@ async def presence():
         await sleep(30)
         await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.listening, name="Fangs || ,help"))
         await sleep(30)
-        await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="Noice || ,help"))
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="with cats || ,help"))
         await sleep(30)
         await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.listening, name=f"{len(bot.users)} users || ,help"))
         await sleep(30)
