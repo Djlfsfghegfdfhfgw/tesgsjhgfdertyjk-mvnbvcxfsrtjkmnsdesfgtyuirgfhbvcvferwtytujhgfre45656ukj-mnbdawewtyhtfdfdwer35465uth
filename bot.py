@@ -611,7 +611,7 @@ async def setplaying(ctx, *, message = None):
 @commands.cooldown(1, 5, commands.BucketType.user)
 async def help(ctx):
     embed = discord.Embed(title="HELP", description="More questions? Ask the owners of the server!", color=0xe67e22)
-    embed.add_field(name="<a:ablobdancewhite:464794007755685898> Fun", value="`8ball`  `gay`  `achievement`  `dice`  `slots`  `xd`  `choose`  `shiba`  `emoji`  `respect`  `dog`  `doge`  `cat`  `kill`", inline=False)
+    embed.add_field(name="<:catto:516978755588063238> Fun", value="`8ball`  `gay`  `achievement`  `dice`  `slots`  `xd`  `choose`  `shiba`  `emoji`  `respect`  `dog`  `doge`  `cat`  `kill`", inline=False)
     embed.add_field(name=":ok: Text", value="`lenny`  `shrug`  `blobdance`  `jesussay`  `clap`  `sayd`  `say`  `space`  `owo`  `wumpus`  `parrot`", inline=False)
     embed.add_field(name=":hammer:  Moderation", value="`kick`  `ban`  `softban`  `purge`  `role`", inline=False)
     embed.add_field(name=":smile:  Action", value="`hug`  `kiss`  `poke`  `pat`  `slap`", inline=False)
