@@ -49,8 +49,8 @@ async def on_message(message):
 
 @bot.listen()
 async def on_message(message):
-    if message.content.lower() == '<@390540063609454593>' and message.author != bot.user:
-        await message.channel.send("**Raluvy is away**, Please... don't ping me. ;w;")
+    if message.content.lower() == '<@356091124563050498>' and message.author != bot.user:
+        await message.channel.send("**Fangs is away**, Please... don't ping me. ;w;")
     else:
         await bot.process_command(message)
 
