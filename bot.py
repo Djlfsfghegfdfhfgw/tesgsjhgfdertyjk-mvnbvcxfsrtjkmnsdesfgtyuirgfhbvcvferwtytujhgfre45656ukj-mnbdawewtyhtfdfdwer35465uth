@@ -20,13 +20,6 @@ logging.basicConfig(level='INFO')
 bot.remove_command('help')
 bot.load_extension("cogs.admin")
 bot.load_extension("cogs.api")
-    
-COGS = [music.Music, error.CommandErrorHandler, meta.Meta]
-
-
-def add_cogs(bot):
-    for cog in COGS:
-        bot.add_cog(cog(bot, cfg))  # Initialize the cog and add it to the bot
 
 @bot.event
 async def on_ready():
@@ -35,6 +28,12 @@ async def on_ready():
  print(bot.user.id)
  print("Discord.py API version:", discord.__version__)
 
+COGS = [music.Music, error.CommandErrorHandler, meta.Meta]
+
+
+def add_cogs(bot):
+    for cog in COGS:
+        bot.add_cog(cog(bot, cfg))  # Initialize the cog and add it to the bot
 @bot.listen()
 async def on_command_error(ctx, error):
     print(f'\'{ctx.author}\' used command \'{ctx.command}\' and got this error: \n-{error}')
