@@ -8,16 +8,26 @@ from discord import opus
 import async_timeout
 from random import randint
 from discord.ext import commands
+from cogs import music, error, meta
 from asyncio import sleep
 import logging
 import os
+import config
 
+cfg = config.load_config()
 bot = commands.Bot(command_prefix=',')
 logging.basicConfig(level='INFO')
 bot.remove_command('help')
 bot.load_extension("cogs.admin")
 bot.load_extension("cogs.api")
     
+COGS = [music.Music, error.CommandErrorHandler, meta.Meta]
+
+
+def add_cogs(bot):
+    for cog in COGS:
+        bot.add_cog(cog(bot, cfg))  # Initialize the cog and add it to the bot
+
 @bot.event
 async def on_ready():
  print('Logged in as')
